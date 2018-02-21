@@ -35,7 +35,7 @@ def run_domain_check
     if ENV['ENVIRONMENT'] == 'production'
       Mail.defaults do
         delivery_method :smtp,
-                        address: ENV['FEEDBACK_ADDRESS'],
+                        address: ENV['FEEDBACK_SMTP_ADDRESS'],
                         port: '587',
                         user_name: ENV['FEEDBACK_SMTP_AUTH_USER'],
                         password: ENV['FEEDBACK_SMTP_AUTH_PASSWORD'],
