@@ -22,9 +22,9 @@ def run_domain_check
     # write the body in the format of domain / output message
     body = ''
     outputs.each do |output|
-      body << output[0].gsub("\n", "</br />")
+      body << output[0].gsub("\n", "<br />")
       body << "<br />"
-      body << output[1].gsub("\n", "</br />")
+      body << output[1].gsub("\n", "<br />")
       body << "<br />"
       body << "-------------------------------------------------------"
       body << "<br /><br />"
