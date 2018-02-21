@@ -22,12 +22,12 @@ def run_domain_check
     # write the body in the format of domain / output message
     body = ''
     outputs.each do |output|
-      body << output[0]
-      body << "\n"
-      body << output[1]
-      body << "\n"
+      body << output[0].gsub("\n", "</br />")
+      body << "<br />"
+      body << output[1].gsub("\n", "</br />")
+      body << "<br />"
       body << "-------------------------------------------------------"
-      body << "\n\n"
+      body << "<br /><br />"
     end
 
 
@@ -54,8 +54,13 @@ def run_domain_check
       from    ENV['FEEDBACK_FROM_EMAIL']
       to      ENV['FEEDBACK_TO_EMAIL']
       subject ENV['EMAIL_SUBJECT']
+
+      html_part do
+        content_type 'text/html; charset=UTF-8'
+        body body
+      end
     end
-    mail[:body] = body
+    # mail[:body] = body
 
     # send the email
     mail.deliver!
