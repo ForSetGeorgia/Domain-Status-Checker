@@ -16,8 +16,8 @@ This program runs a whois command to check on the status of a domain(s). The res
 
 ## Usage
 
-- `rake domain_cheker:run` -> Run the scraper!
-- `rake domain_cheker:schedule:run_daily` -> Schedule a cron job to run `rake domain_cheker:run` according to the confid/schedule.rb file.
+- `rake domain_checker:run` -> Run the scraper!
+- `rake domain_checker:schedule:run_daily` -> Schedule a cron job to run `rake domain_cheker:run` according to the confid/schedule.rb file.
 
 ## How it Works
 
