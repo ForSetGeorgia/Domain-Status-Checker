@@ -6,7 +6,7 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.99)
-    rake (10.5.0)
+    rake (12.3.3)
     subexec (0.2.3)
     whenever (0.9.4)
       chronic (>= 0.6.3)
@@ -17,7 +17,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv (~> 2.0.2)
   mail (~> 2.6, >= 2.6.3)
-  rake (~> 10.5)
+  rake (~> 12.3)
   subexec (~> 0.2.3)
   whenever (~> 0.9.4)
 
